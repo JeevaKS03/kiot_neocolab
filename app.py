@@ -14,5 +14,3 @@ def pwd():
 @app.route("/content")
 def content():
     return "Dashboard"
-if __name__=="__main__":
-    app.run(debug=True)
