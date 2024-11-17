@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Institute of Technology</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"> </head>
+<body>
+    <div class="container">
+        <img src="{{url_for('static',filename='login_bg.svg')}}" alt="Graduation Image" id="bg" height="600px" width="500px">
+        <div id="indiv">
+        <img src="{{url_for('static',filename='kiot_logo.jpeg')}}" id="logo" height="50px" width="50px">    
+        <h2 id="title">Knowledge Institute of Technology</h2>
+        <h3 class="labels">Sign In</h3>
+        <h4 class="labels">The key to happiness is to sign in.</h4>
+        <h3 class="labels">Email</h3>  
+        <input type="email" required id="input" placeholder="Enter your email">
+        <button id="button">Next</button>  
+        <a href="https://systemcheck.merittracpariksha.com" id="syscheck" target="_blank"><h3>System Compatibility Check?</h3></a>   
+    </div>
+    </div>
+    <script src="{{url_for('static',filename='index.js')}}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

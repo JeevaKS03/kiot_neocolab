@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Institute of Technology</title>
+    <style>
+ body {
+    background-color: #f5e3e5fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    box-shadow: 1px 1px 6px;
+    height: 600px;
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+#indiv{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: center;
+    
+}
+#title{
+    padding-top: -10px;
+    padding-left: 200px;
+    text-align: center;
+    
+}
+#bg{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+
+#logo{
+    padding-left: 65%;
+    padding-top: 50px;
+    
+}
+.labels{
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 200px;
+    margin-top: -20px;
+}
+h4{
+    font-size: 15px;
+    color: rgba(85, 79, 79, 0.968);
+}   
+input{
+    height: 30px;
+    width: 350px;
+    margin-left: 200px;
+    margin-top: -15px;
+    margin-bottom: 5px;
+    border: 3px solid black;
+    border-radius: 4px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    padding-left: 8px;
+}
+button{
+    height:40px;
+    width: 365px;
+    margin-left: 200px;
+    margin-top:20px ;
+    color: #ffffff;
+    background-color: rgb(76, 34, 244);
+    border: 10px;
+    border-color: blue;
+    border-radius: 4px;
+    font-size: large;  
+}
+#showpassword{
+    height: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+    </style>
+<body>
+    <div class="container">
+        <img src="{{url_for('static',filename='login_bg.svg')}}" alt="Graduation Image" id="bg" height="600px" width="500px">
+        <div id="indiv">
+        <img src="{{url_for('static',filename='kiot_logo.jpeg')}}" id="logo" height="50px" width="50px">    
+        <h2 id="title">Knowledge Institute of Technology</h2>
+        <h3 class="labels">Sign In</h3>
+        <h4 class="labels">The key to happiness is to sign in.</h4>
+        <h3 class="labels">Email</h3>  
+        <input type="email" required id="inputmail" placeholder="Enter your email">
+        <h3 class="labels">Password</h3>  
+        <input type="password" required id="inputpassword">
+        <input type="checkbox" id="showpassword" >
+        <label for="showpassword">Show Password</label>
+        <button >Login</button>  
+    </div>
+    </div>
+    <script src="{{url_for('static',filename='login.js')}}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
